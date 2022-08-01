@@ -1,0 +1,23 @@
+{
+  "license": "ISC",
+  "version": "1.0.0",
+  "name": "grpc-course",
+  "description": "Introduction to gRPC technology",
+  "keywords": ["grpc", "node"],
+  "author": "Gabriel Andres Brandalisse",
+  "main": "index.js",
+  "scripts": {
+    "pb:gen": "./scripts/gen.sh greet calculator",
+    "greet:server": "node greet/server/index.js",
+    "greet:client": "node greet/client/index.js",
+    "calculator:server": "node calculator/server/index.js",
+    "calculator:client": "node calculator/client/index.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.8",
+    "google-protobuf": "^3.20.1"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.11.2"
+  }
+}

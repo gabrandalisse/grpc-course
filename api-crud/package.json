@@ -1,0 +1,23 @@
+{
+  "name": "api-crud",
+  "version": "1.0.0",
+  "description": "API CRUD made with gRPC and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "pb:gen": "./scripts/gen.sh blog",
+    "blog:server": "node blog/server/index.js",
+    "blog:client": "node blog/client/index.js",
+    "blog:db": "docker-compose up"
+  },
+  "keywords": ["grpc", "node", "mongodb"],
+  "author": "Gabriel Andres Brandalisse",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.8",
+    "google-protobuf": "^3.21.0",
+    "mongodb": "^4.8.1"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.11.2"
+  }
+}

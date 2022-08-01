@@ -1,0 +1,16 @@
+{
+  "name": "grpc-dynamic",
+  "version": "1.0.0",
+  "description": "Dynamic code generation example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Andres Brandalisse",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.7.0",
+    "grpc": "^1.24.11",
+    "proto-loader": "^0.2.0"
+  }
+}
